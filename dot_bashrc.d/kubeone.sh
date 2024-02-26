@@ -1,1 +1,0 @@
-source <(kubeone completion bash)
