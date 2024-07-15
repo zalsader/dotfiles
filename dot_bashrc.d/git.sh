@@ -1,5 +1,12 @@
 alias gfpush='git push --force'
-alias grmain='git rebase main'
+grmain () {
+	current_branch=$(git branch --show-current)
+	git switch main
+	git pull
+	git switch $current_branch
+	git rebase main "$@"
+}
+
 gpullf () { 
 	git fetch --all && git reset --hard origin/$(git branch --show-current); 
 }
