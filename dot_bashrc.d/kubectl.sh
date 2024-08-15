@@ -1,3 +1,5 @@
+source <(kubectl completion bash)
+
 alias watch='watch '
 source ~/.bash_completion.d/complete_alias
 alias k=kubectl
