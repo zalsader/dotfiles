@@ -9,6 +9,9 @@ complete -F _complete_alias kx
 alias kns='kubectl ns'
 complete -F _complete_alias kns
 
+alias tf='terraform'
+complete -F _complete_alias tf
+
 for kconfig in $HOME/.kube/config $(find $HOME/.kube/ -iname "*.config")
 do
   if [ -f "$kconfig" ];then
