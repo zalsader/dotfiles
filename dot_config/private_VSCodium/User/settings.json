@@ -1,0 +1,7 @@
+{
+    "window.titleBarStyle": "custom",
+    "git.alwaysSignOff": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "window.zoomLevel": 1
+}
