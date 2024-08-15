@@ -5,10 +5,10 @@ source ~/.bash_completion.d/complete_alias
 alias k=kubectl
 complete -F _complete_alias k
 
-alias kx='kubectl ctx'
+alias kx='kubectx'
 complete -F _complete_alias kx
 
-alias kns='kubectl ns'
+alias kns='kubens'
 complete -F _complete_alias kns
 
 alias tf='terraform'
