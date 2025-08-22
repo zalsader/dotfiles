@@ -1,4 +1,4 @@
 export GOROOT=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOROOT/bin
-export GOPROXY="https://proxy.golang.org"
+export GOPROXY="proxy.golang.org,direct"
