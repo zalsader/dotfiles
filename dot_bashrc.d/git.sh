@@ -1,10 +1,11 @@
 alias gfpush='git push --force'
 grmain () {
+	main_branch=$(git remote show [your_remote] | sed -n '/HEAD branch/s/.*: //p')
 	current_branch=$(git branch --show-current)
-	git switch main
+	git switch $main_branch
 	git pull
 	git switch $current_branch
-	git rebase main "$@"
+	git rebase $main_branch "$@"
 }
 
 gpullf () { 
